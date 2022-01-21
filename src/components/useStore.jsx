@@ -6,10 +6,10 @@ const useStore = create(set => ({
 	removeAllPeople: () => set({ people: [] }),
 	filterPeople: () =>
 		set(state => ({ people: state.people.filter(person => person.length === 3) })),
-	// filterPeople: () => set(state => ({ people: [...(state.people.length === 3)] })),
-	// filterPeople: filter => set(state => ({ people: [...state.people, filter] })),
-	darkMode: false,
+
+	//nochmal drüber schauen
 	toggleDarkMode: () => set(state => ({ darkMode: !state.darkMode })),
+	//nochmal drüber schauen
 }));
 
 export default useStore;
